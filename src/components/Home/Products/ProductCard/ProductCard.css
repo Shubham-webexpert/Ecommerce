@@ -1,5 +1,5 @@
-.card{
-    background-color:#c0a5a5;
+.card {
+    background-color: #c0a5a5;
     width: 80%;
     height: 400px;
     text-align: center;
@@ -9,18 +9,31 @@
     margin-bottom: 15px;
 }
 
-.card-image{
+.card-image {
     width: 100%;
 }
 
-.card-image img{
+.card-image img {
     width: 100%;
     border-radius: 12px;
 }
 
-.card-content{
+.card-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.zoomimg {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 50px;
+    border: 1px solid #00adb7;
+    border-radius: 15px;
+
+    :hover {
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.55), 0 14px 18px rgba(0, 0, 0, 0.55)
+    }
 }

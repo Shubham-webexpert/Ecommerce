@@ -25,7 +25,7 @@ export default function RightMenubar() {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                <Avatar style={{fontSize:5}}></Avatar>
+                <Avatar style={{ fontSize: 5 }}></Avatar>
             </Button>
             <Menu
                 id="basic-menu"
@@ -38,8 +38,8 @@ export default function RightMenubar() {
             >
                 {
                     rightSubmenu.map((ele, index) => (
-                        <Link to="/" style={{textDecoration:"none",color:"#000"}} key={index}>
-                            <Box style={{display:"flex",alignItems:'center',paddingLeft:15}}>
+                        <Link to={ele.url} style={{ textDecoration: "none", color: "#000" }} key={index}>
+                            <Box style={{ display: "flex", alignItems: 'center', paddingLeft: 15 }}>
                                 <Icon>{ele.icon}</Icon>
                                 <MenuItem onClick={handleClose}>{ele.title}</MenuItem>
                             </Box>

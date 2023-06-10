@@ -12,17 +12,16 @@ const Products = () => {
 
     useEffect(() => {
         dispatch(fetchData());
+        console.log("data",data);
     }, []);
-    console.log("cart", cart);
 
-    // console.log("Data", data?.products);
     return (
         <div style={{ padding: 35 }}>
             <Grid container spacing={2}>
                 {data?.products?.map((item) => {
                     return (
-                        <Grid xs={6} sm={4} md={3} lg={2} >
-                            <ProductCard item={item}  key={item.id}/>
+                        <Grid xs={6} sm={4} md={3} lg={2} key={item.id}>
+                            <ProductCard item={item} />
                         </Grid>
                     );
                 })}
